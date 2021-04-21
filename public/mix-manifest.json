@@ -1,5 +1,4 @@
 {
-    "/css/welcome/index.css": "/css/welcome/index.css",
-    "/css/login/index.css": "/css/login/index.css",
-    "/css/register/index.css": "/css/register/index.css"
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css"
 }
