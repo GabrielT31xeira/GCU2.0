@@ -1,0 +1,93 @@
+.navbar-container {
+    background-color: #00060F;
+    height: 70px;
+    width: auto;
+    box-shadow: 0 0 1em black;
+}
+
+.navbar-logo {
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 40px;
+    padding: 3px 20px;
+}
+
+.register-container {
+    background-color: #00060F;
+    box-shadow: 0 0 1em black;
+    border-radius: 30px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    height: 410px;
+    width: 400px;
+}
+
+.title-register {
+    text-align: center;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.neon-register {
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    border-radius: 2.5px;
+    padding: 5px 20px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon-register:hover {
+    color: white;
+    background: #2679b5;
+    box-shadow: 0 0 10px #2679b5, 0 0 10px #2679b5, 0 0 10px #2679b5;
+}
+
+.separate {
+    margin: 5px;
+    background: none;
+}
+
+.login-link {
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 39%;
+    transition: 0.2s;
+}
+
+.login-link:hover {
+    color: #2679b5;
+}

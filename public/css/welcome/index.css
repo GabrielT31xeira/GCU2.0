@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #030A1C;
+    font-family: 'Poppins';
+}
+.navbar-container {
+    background-color: #00060F;
+    height: 70px;
+    width: auto;
+    box-shadow: 0 0 1em black;
+}
+
+.navbar-logo {
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 40px;
+    padding: 3px 20px;
+}
+
+.register-button {
+    margin-top: 0;
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    border-radius: 2.5px;
+    padding: 2.5px 20px;
+    font-size: 20px;
+    margin-left: 83%;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.register-button:hover {
+    color: white;
+    background: #2679b5;
+    box-shadow: 0 0 10px #2679b5, 0 0 10px #2679b5, 0 0 10px #2679b5;
+}
+
+#logo {
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    transform: translate(-40%, -30%);
+    animation: fill 1s ease forwards 1.8s;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(6) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(7) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(8) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(9) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(10) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(11) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(12) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(13) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(14) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(15) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(16) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(17) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(18) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(19) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(20) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(21) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+#logo path:nth-child(22) {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: line-anim 4s ease forwards;
+}
+
+.welcome {
+    margin-top: 220px;
+    text-align: center;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.neon-login {
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    border-radius: 2.5px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-top: 100px;
+    margin-left: 47%;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon-login:hover {
+    color: white;
+    background: #2679b5;
+    box-shadow: 0 0 10px #2679b5, 0 0 10px #2679b5, 0 0 10px #2679b5;
+}
+
+.a-welcome {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    background-color: #00060F;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 1em black;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-p {
+    background: none;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill: white;
+    }
+}

@@ -11,7 +11,20 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+//  CSS
+mix.styles([
+    'resources/views/css/welcome/reset.css',
+    'resources/views/css/welcome/index.css'
+], 'public/css/welcome/index.css');
+
+mix.styles([
+    'resources/views/css/login/reset.css',
+    'resources/views/css/messages/error.css',
+    'resources/views/css/login/index.css'
+], 'public/css/login/index.css');
+
+mix.styles([
+    'resources/views/css/register/reset.css',
+    'resources/views/css/messages/error.css',
+    'resources/views/css/register/index.css'
+], 'public/css/register/index.css');
