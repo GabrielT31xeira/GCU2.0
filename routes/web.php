@@ -20,20 +20,15 @@ use App\Http\Controllers\Adm\AdminController;
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
-Route::get('/admin/dashboard',[AdminController::class, 'index']);
-// Route::group(['prefix' => 'Adm','middleware' => 'auth'],function(){
-    // });
+Route::group(['prefix' => 'Adm','middleware' => ['isAdmin','auth']],function(){
+    Route::get('/admin/dashboard',[AdminController::class, 'index'])->name('admin.dashboard');
+});
     
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     
-    // Route::get('/login',[PagesController::class, 'login']);
-    // Route::get('/register',[PagesController::class, 'register']);
-    
-    // Route::post('/login',[LoginController::class, 'login'])->name('login');
-    // Route::post('/register',[RegisterController::class, 'createUser'])->name('register');

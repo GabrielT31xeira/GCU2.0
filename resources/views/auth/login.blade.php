@@ -29,7 +29,7 @@
             </div>
             @endif
 
-            <button type="submit" class="neon-login">Entrar</button><br />
+            <button type="submit" class="neon-login">{{ __('Login') }}</button><br />
             <a href="/register" class="register-link">Cadastre-se</a>
         </div>
     </form>
