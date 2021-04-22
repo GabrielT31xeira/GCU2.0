@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -31,6 +33,9 @@ class RegisterController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    protected function redirectTo(){
+        return redirect('/login');
+    }
     /**
      * Create a new controller instance.
      *
@@ -50,9 +55,9 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'nickname' => ['required', 'string', 'max:255','unique:users'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'string', 'min:4','unique:users'],
         ]);
     }
 
@@ -62,13 +67,23 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function register(Request $request)
     {
-        return User::create([
-            'nickname' => $data['nickname'],
-            'email' => $data['email'],
-            'role' => 3,
-            'password' => Hash::make($data['password']),
+        $request->validate([
+            'nickname' => ['required', 'string', 'max:255','unique:users'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:4','unique:users'],
         ]);
+
+        $user = new User();
+        $user->nickname = $request->nickname;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        $user->role_id = 3;
+
+        if ($user->save()) {
+            return redirect('/login');
+        }
+        return redirect('/register')->with('fail','Erro do nosso lado estamos trabalhando nisso.');
     }
 }
