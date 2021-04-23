@@ -14,3 +14,20 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sourceMaps();
+//  CSS
+mix.styles([
+    'resources/views/css/login/reset.css',
+    'resources/views/css/messages/error.css',
+    'resources/views/css/login/index.css'
+], 'public/css/login/index.css');
+
+mix.styles([
+    'resources/views/css/register/reset.css',
+    'resources/views/css/messages/error.css',
+    'resources/views/css/register/index.css'
+], 'public/css/register/index.css');
+
+mix.styles([
+    'resources/views/css/admDashboard/reset.css',
+    'resources/views/css/admDashboard/index.css'
+], 'public/css/admDashboard/index.css');

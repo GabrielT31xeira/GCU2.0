@@ -26,7 +26,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'Adm','middleware' => ['isAdmin','auth']],function(){
+Route::group(['middleware' => ['isAdmin','auth']],function(){
     Route::get('/admin/dashboard',[AdminController::class, 'index'])->name('admin.dashboard');
 });
     

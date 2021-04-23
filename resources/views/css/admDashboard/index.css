@@ -1,0 +1,51 @@
+.navbar-container {
+    background-color: #00060F;
+    height: 70px;
+    width: auto;
+    box-shadow: 0 0 1em black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-container>*:last-child {
+    margin-left: auto;
+}
+
+.navbar-logo {
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 40px;
+    padding: 3px 20px;
+}
+
+.logout {
+    font-size: 20px;
+    font-family: 'Poppins';
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 15px;
+    background: none;
+}
+
+footer {
+    position: absolute;
+    background-color: #00060F;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 1em black;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-p {
+    background: none;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
