@@ -28,7 +28,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['isAdmin','auth']],function(){
     Route::get('/admin/dashboard',[AdminController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin/dashboard/allUsers',[App\Http\Livewire\Admin\ShowUsers::class,'render']);
 });
-    
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    

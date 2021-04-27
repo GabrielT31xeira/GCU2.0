@@ -29,5 +29,6 @@ mix.styles([
 
 mix.styles([
     'resources/views/css/admDashboard/reset.css',
-    'resources/views/css/admDashboard/index.css'
+    'resources/views/css/admDashboard/index.css',
+    'resources/views/css/admDashboard/forms/user.css'
 ], 'public/css/admDashboard/index.css');

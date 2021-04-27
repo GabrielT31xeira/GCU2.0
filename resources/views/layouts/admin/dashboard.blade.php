@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/admDashboard/index.css" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
-
-    @livewireStyles
+    <link href="/css/admDashboard/index.css" rel="stylesheet">
 
     <title>GCU :: Welcome</title>
 </head>
@@ -21,15 +19,16 @@
         <livewire:logout-link />
     </div>
 
-    <div>
-        @yield('content')
-    </div>
+
+    @yield('content')
+
 
     <footer class="footer">
         <p class="footer-p">GCU &copy; 2021</p>
     </footer>
 
     @livewireScripts
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
 </body>
 
 </html>

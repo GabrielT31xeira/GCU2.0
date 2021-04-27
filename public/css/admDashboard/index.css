@@ -37,6 +37,7 @@ a {
     text-decoration: none;
     margin-right: 15px;
     background: none;
+    color: white;
 }
 
 footer {
@@ -56,3 +57,68 @@ footer {
     font-family: 'Poppins';
     font-size: 20px;
 }
+
+.form-users {
+    margin: 40px;
+    border-radius: 15px;
+    background-color: #00060F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content{
+    height: auto;
+    width: 600px;
+    background: none;
+    margin-left: 20px;
+}
+h1{
+    margin-top: 10px;
+    color: white;
+    background: none;
+}
+form{
+    background: none;
+}
+input{
+    margin: 5px;
+    background: none;
+    padding: 7px 10px;
+    border-radius: 24px;
+    border: 2px solid #3498db;
+    color: white;
+    outline: none;
+}
+button{
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    border-radius: 2.5px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    padding: 5px 20px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+button:hover{
+    color: white;
+    background: #2679b5;
+    box-shadow: 0 0 10px #2679b5, 0 0 10px #2679b5, 0 0 10px #2679b5;
+}
+table{
+    color: white;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    text-align: center;
+}
+th{
+    background: #00060F;
+    margin: 15px;
+}
+td{
+    background: #00060F;
+    margin: 15px;
+}
+
