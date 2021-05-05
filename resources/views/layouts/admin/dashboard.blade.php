@@ -15,7 +15,7 @@
 
     <div class="navbar-container">
         <p class="navbar-logo">GCU </p>
-        <a href="/admin/dashboard/allUsers">Ver Usuários</a>
+        <a href="/admin/dashboard/users">Usuários</a>
         <livewire:logout-link />
     </div>
 
@@ -24,11 +24,10 @@
 
 
     <footer class="footer">
-        <p class="footer-p">GCU &copy; 2021</p>
+        GCU &copy; 2021
     </footer>
 
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
 </body>
-
 </html>

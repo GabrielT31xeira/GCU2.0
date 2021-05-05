@@ -23,13 +23,13 @@ form{
 input{
     margin: 5px;
     background: none;
-    padding: 7px 10px;
+    padding: 7px 30px;
     border-radius: 24px;
     border: 2px solid #3498db;
     color: white;
     outline: none;
 }
-button{
+.button-search{
     border: none;
     background: none;
     color: white;
@@ -42,10 +42,45 @@ button{
     overflow: hidden;
     transition: 0.2s;
 }
-button:hover{
+.button-search:hover{
     color: white;
     background: #2679b5;
     box-shadow: 0 0 10px #2679b5, 0 0 10px #2679b5, 0 0 10px #2679b5;
+}
+.button-new{
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    border-radius: 2.5px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    padding: 5px 20px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.button-new:hover{
+    color: white;
+    background: #2bb526;
+    box-shadow: 0 0 10px #11AA13FF, 0 0 10px #11AA13FF, 0 0 10px #11AA13FF;
+}
+.button-delete{
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    border-radius: 2.5px;
+    margin-bottom: 7px;
+    padding: 5px 20px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.button-delete:hover{
+    color: white;
+    background: #bd1a1a;
+    box-shadow: 0 0 10px #a50000, 0 0 10px #a50000, 0 0 10px #a50000;
 }
 table{
     color: white;
@@ -55,7 +90,7 @@ table{
 }
 th{
     background: #00060F;
-    margin: 15px;
+    padding: 0 10px;
 }
 td{
     background: #00060F;
